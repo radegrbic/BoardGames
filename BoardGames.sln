@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoardGames", "BoardGames\BoardGames.csproj", "{5FFB4E15-3E58-4454-A02B-24C09D4E14D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{40534646-ACA4-4C74-8A0F-2BED9676323B} = {40534646-ACA4-4C74-8A0F-2BED9676323B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainCore", "DomainCore\DomainCore.csproj", "{1AD38713-2A0E-46D4-BD73-57D94B4009AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainServices", "DomainServices\DomainServices.csproj", "{40534646-ACA4-4C74-8A0F-2BED9676323B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityDataLayer", "IdentityDataLayer\IdentityDataLayer.csproj", "{BC48AE6C-8716-44F3-8A9E-CA5C6D748397}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganiserBoardGameNightDataLayer", "OrganiserBoardGameNightDataLayer\OrganiserBoardGameNightDataLayer.csproj", "{662B49EF-FFE7-48B3-8072-A8D6C9DE5530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerBoardGameNightDataLayer", "PlayerBoardGameNightDataLayer\PlayerBoardGameNightDataLayer.csproj", "{FDDB25F7-08A6-4A93-AB5E-93736633390B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FFB4E15-3E58-4454-A02B-24C09D4E14D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFB4E15-3E58-4454-A02B-24C09D4E14D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFB4E15-3E58-4454-A02B-24C09D4E14D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFB4E15-3E58-4454-A02B-24C09D4E14D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AD38713-2A0E-46D4-BD73-57D94B4009AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD38713-2A0E-46D4-BD73-57D94B4009AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD38713-2A0E-46D4-BD73-57D94B4009AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD38713-2A0E-46D4-BD73-57D94B4009AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40534646-ACA4-4C74-8A0F-2BED9676323B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40534646-ACA4-4C74-8A0F-2BED9676323B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40534646-ACA4-4C74-8A0F-2BED9676323B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40534646-ACA4-4C74-8A0F-2BED9676323B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC48AE6C-8716-44F3-8A9E-CA5C6D748397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC48AE6C-8716-44F3-8A9E-CA5C6D748397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC48AE6C-8716-44F3-8A9E-CA5C6D748397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC48AE6C-8716-44F3-8A9E-CA5C6D748397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662B49EF-FFE7-48B3-8072-A8D6C9DE5530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662B49EF-FFE7-48B3-8072-A8D6C9DE5530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662B49EF-FFE7-48B3-8072-A8D6C9DE5530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662B49EF-FFE7-48B3-8072-A8D6C9DE5530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDB25F7-08A6-4A93-AB5E-93736633390B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDB25F7-08A6-4A93-AB5E-93736633390B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDB25F7-08A6-4A93-AB5E-93736633390B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDB25F7-08A6-4A93-AB5E-93736633390B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC0FE15A-D397-4E86-B206-51383B7652E1}
+	EndGlobalSection
+EndGlobal
