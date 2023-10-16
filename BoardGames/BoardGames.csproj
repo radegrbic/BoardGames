@@ -19,4 +19,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DomainServices\DomainServices.csproj" />
+    <ProjectReference Include="..\IdentityDataLayer\IdentityDataLayer.csproj" />
+    <ProjectReference Include="..\OrganiserBoardGameNightDataLayer\OrganiserBoardGameNightDataLayer.csproj" />
+    <ProjectReference Include="..\PlayerBoardGameNightDataLayer\PlayerBoardGameNightDataLayer.csproj" />
+  </ItemGroup>
+
 </Project>
