@@ -9,13 +9,14 @@
   },
   "profiles": {
     "BoardGames": {
+      "applicationUrl": "https://localhost:7210;http://localhost:5154",
+      "AZURE_WEBAPP_PUBLISH_PROFILE": "<publishData><publishProfile profileName='boardgamesnight- Web: null Deploy' publishMethod='MSDeploy' publishUrl='boardgamesnight.scm.azurewebsites.net: 443' msdeploySite='boardgamesnight' userName='$boardgamesnight' userPWD='AERosCQCgEqWclLs8JiwQgbJpKDdNx9qbr5xXWaCddWFFnHm7WdthA9SByX9' destinationAppUrl='https//boardgamesnight.azurewebsites.net' SQLServerDBConnectionString='' mySQLDBConnectionString='' hostingProviderForumLink='' controlPanelLink='http://windows.azure.com' webSystem='WebSites'><databases /></publishProfile><publishProfile profileName='boardgamesnight - FTP' publishMethod='FTP' publishUrl='ftps://waws-prod-blu-207.ftp.azurewebsites.windows.net/site/wwwroot' ftpPassiveMode='True' userName=boardgamesnight\$boardgamesnight userPWD='AERosCQCgEqWclLs8JiwQgbJpKDdNx9qbr5xXWaCddWFFnHm7WdthA9SByX9' destinationAppUrl='https://boardgamesnight.azurewebsites.net' SQLServerDBConnectionString='' mySQLDBConnectionString='' hostingProviderForumLink='' controlPanelLink='http://windows.azure.com' webSystem='WebSites'><databases /></publishProfile><publishProfile profileName='boardgamesnight - Zip Deploy' publishMethod='ZipDeploy' publishUrl='boardgamesnight.scm.azurewebsites.net:443' userName='$boardgamesnight' userPWD='AERosCQCgEqWclLs8JiwQgbJpKDdNx9qbr5xXWaCddWFFnHm7WdthA9SByX9' destinationAppUrl='https://boardgamesnight.azurewebsites.net' SQLServerDBConnectionString='' mySQLDBConnectionString='' hostingProviderForumLink='' controlPanelLink='http://windows.azure.com' webSystem='WebSites'><databases /></publishProfile></publishData>",
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "applicationUrl": "https://localhost:7210;http://localhost:5154",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "launchBrowser": true
     },
     "IIS Express": {
       "commandName": "IISExpress",
