@@ -1,0 +1,103 @@
+﻿@model SignUpViewModel
+
+@functions {
+    public string SubmitType { get; set; } = null!;
+    public bool NewSignUp { get; set; }
+}
+
+@if (Model == null)
+{
+    SubmitType = "SignUp";
+    NewSignUp = true;
+}
+else
+{
+    SubmitType = "EditProfile";
+    NewSignUp = false;
+}
+
+<div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <div class="card card-margin-top">
+            @if (NewSignUp)
+            {
+                <h2 class="card-header">Aanmelden</h2>
+            }
+            else
+            {
+                <h2 class="card-header">Profiel aanpassen</h2>
+            }
+            <div class="card-padding">
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger" role="alert" asp-validation-summary="All"></div>
+                }
+                <form asp-action="@SubmitType" method="post" class="form" role="form">
+                    <div class="row margin-bottom">
+                        <div class="col-6">
+                            <input class="form-control" name="FirstName" value="@Model?.FirstName" placeholder="Voornaam" type="text"
+                                   required autofocus />
+                        </div>
+                        <div class="col-6">
+                            <input class="form-control" name="SecondName" value="@Model?.SecondName" placeholder="Achternaam" type="text"
+                                   required autofocus />
+                        </div>
+                    </div>
+                    <div class="row margin-bottom">
+                        <div class="col-8">
+                            <input class="form-control" name="Street" value="@Model?.Street" placeholder="Straat" type="text"
+                                   required autofocus />
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control" name="HouseNumber" value="@Model?.HouseNumber" placeholder="Huisnummer" type="text"
+                                   required autofocus />
+                        </div>
+                    </div>
+                    <input class="form-control margin-bottom" name="City" value="@Model?.City" placeholder="Stad" type="text" />
+                    @if (NewSignUp)
+                    {
+                        <input class="form-control margin-bottom" name="Email" placeholder="Email" type="email" />
+                        <input class="form-control margin-bottom" name="Password" placeholder="Wachtwoord" type="password" />
+                    }
+                    else
+                    {
+                        <input type="hidden" name="Email" value="@Model?.Email" />
+                    }
+                    <label for="">
+                        Geboortedatum
+                    </label>
+                    <div class="row margin-bottom">
+                        <div class=" col-12">
+                            @if (NewSignUp)
+                            {
+                                <input class="form-control" name="Birthday" type="date" />
+                            }
+                            else
+                            {
+                                <input class="form-control" name="Birthday" value="@Model?.Birthday.Date.ToShortDateString()" />
+                            }
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    @if (NewSignUp)
+                    {
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">
+                            Aanmelden
+                        </button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">
+                            Aanpassen
+                        </button>
+                    }
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>

@@ -1,0 +1,27 @@
+﻿@model LoginViewModel
+
+<div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <div class="card card-margin-top">
+            <h2 class="card-header">Inloggen</h2>
+            <div class="card-padding">
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger" role="alert" asp-validation-summary="All"></div>
+                }
+                <form asp-action="Login" method="post" class="form" role="form">
+                    <input class="form-control margin-bottom" name="Email" placeholder="Email" type="email" />
+                    <input class="form-control margin-bottom" name="Password" placeholder="Wachtwoord" type="password" />
+                    <br />
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>

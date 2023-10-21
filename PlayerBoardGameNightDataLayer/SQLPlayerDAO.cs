@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PlayerBoardGameNightDataLayer
 {
-    internal class SQLPlayerDAO : IPlayerDAO
+    public class SQLPlayerDAO : IPlayerDAO
     {
         private PlayerBoardGameNightDbContext _dbContext;
 

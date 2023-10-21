@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace IdentityDataLayer
 {
-    internal class IdentityDbContext : IdentityDbContext<IdentityUser>
+    public class SecurityDbContext : IdentityDbContext<IdentityUser>
     {
-        public IdentityDbContext(DbContextOptions<IdentityDbContext> options) : base(options)
+        public SecurityDbContext(DbContextOptions<SecurityDbContext> options) : base(options)
         {
 
         }

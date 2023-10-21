@@ -18,7 +18,7 @@ namespace DomainCore
         public string Address { get; set; } = null!;
         public int MaximumPlayers { get; set; }
         public DateTime StartTime { get; set; }
-        public IEnumerable<BoardGame> PlayedBoardGames { get; set; } = null!;
-        public IEnumerable<Food> AvailableFoods { get; set; } = null!;
+        public ICollection<BoardGame> BoardGames { get; set; } = null!;
+        public ICollection<Food> AvailableFoods { get; set; } = null!;
     }
 }
